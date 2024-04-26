@@ -9,8 +9,8 @@
   margin: 0 auto;
   border-radius: 7px;
   border: 1px solid rgba(97, 111, 106, 0.3);
-
   box-shadow: 7px 8px 10px rgba(182, 205, 189, 0.6);
+  font-family: "Raleway", sans-serif;
 }
 
 .city-container {
@@ -46,11 +46,12 @@ select {
   background-color: #f6f7f6;
   border-radius: 5px;
   border-color: #949796;
+  font-family: "Raleway", sans-serif;
 }
 
 .time small {
   font-size: 20px;
-vertical-align: middle;
+  vertical-align: middle;
   
 
 footer {
