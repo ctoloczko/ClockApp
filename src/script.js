@@ -1,4 +1,4 @@
-function updateTime(event) {
+function updateTime() {
   let stockholmDate = moment
     .tz("Europe/Stockholm")
     .format("dddd, MMMM Do YYYY");
@@ -50,8 +50,7 @@ function updateCity(event) {
       </div>
     `;
 }
+updateTime();
 
 let citySelect = document.querySelector("#city-select");
 citySelect.addEventListener("change", updateCity);
-
-updateTime();
