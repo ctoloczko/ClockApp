@@ -5,11 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>World clock</title>
     <link rel="stylesheet" href="src/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.30.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.45/moment-timezone-with-data-1970-2030.min.js"></script>
   </head>
   <body>
     <div class="container">
@@ -25,19 +30,20 @@
 
       <div class="city-container">
         <div>
-          <h2>Your location </h2>
-          <div class="date">Monday, 25th April 2024</div>
+          <h2>Stockholm</h2>
+          <div class="date" id="stockholm-date">Monday, 25th April 2024</div>
         </div>
-        <div class="time">12:24 <small>am</small></div>
+        <div class="time" id="stockholm-time">12:24 <small>am</small></div>
       </div>
-     <hr>
-       <div class="city-container">
+      <hr />
+      <div class="city-container">
         <div>
-          <h2>Selected City</h2>
-          <div class="date">Monday, 25th April 2024</div>
+          <h2>New York</h2>
+          <div class="date" id="newyork-date">Monday, 25th April 2024</div>
         </div>
-        <div class="time">12:24 <small>am</small></div>
+        <div class="time" id="newyork-time">12:24 <small>am</small>
       </div>
+    </div>
 
     <footer>
       This project was coded by
